@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" href="img/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Портфолио</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="header-logo-link">
+                <img src="img/logo.png" alt="logo png" class="header-logo">
+            </a>
+            <ul class="header-list">
+                <a href="index.html" class="header-list-link">
+                    <li class="header-list-item">ГЛАВНАЯ</li>
+                </a>
+                <a href="portfolio.html" class="header-list-link">
+                    <li class="header-list-item">ПОРТФОЛИО</li>
+                </a>
+                <a href="about-me.html" class="header-list-link">
+                    <li class="header-list-item checked-item">ОБО МНЕ</li>
+                </a>
+                <a href="contacts.html" class="header-list-link">
+                    <li class="header-list-item">КОНТАКТЫ</li>
+                </a>
+                <a href="#" class="header-list-link openModal">
+                    <li class="header-list-item">ЗАКАЗАТЬ</li>
+                </a>
+            </ul>
+            <hr class="line">
+        </div>
+    </header>
+    <main>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <img src="img/close.svg" alt="close icon" class="modal-close" id="closeModal">
+                <h4 class="modal-title">ЗАКАЗАТЬ ФОТОСЕССИЮ</h4>
+                <p class="modal-text">
+                    Для того чтобы заказать фотосессию заполните форму. Вы получите письмо с подтверждением заказа на почту.
+                </p>
+                <form action="" class="modal-form">
+                    <div class="input-title">Email:</div>
+                    <input type="email" placeholder="example@gmail.com" class="modal-item modal-input">
+                    <div class="input-title">Номер телефона:</div>
+                    <input type="tel" placeholder="+78005553535" class="modal-item modal-input">
+                    <div class="input-title">Выберите услугу:</div>
+                    <select class="modal-item modal-select">
+                        <option>Почасовая</option>
+                        <option>На весь день</option>
+                        <option>Межгородской</option>
+                      </select>
+                    <div class="input-title">Выберите дату:</div>
+                    <input type="date" class="modal-item modal-date">
+                    <input type="submit" class="modal-submit btn" value="ЗАКАЗАТЬ">
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="about-title">
+                ОБО МНЕ
+            </h2>
+            <div class="about-card">
+                <div class="about-contacts">
+                    <div class="about-contacts-block">
+                        <div class="about-contacts-card">
+                            <a href="baranchuk@yandex.ru" class="about-contacts-email">baranchuk@yandex.ru</a><br>
+                            <a href="tel:+78005553535" class="about-contacts-tel">8 (800) 555-35-35</a>
+                        </div>
+                    </div>
+                    <img src="img/me.png" alt="photo with me" class="about-contacts-img">
+                </div>
+                <div class="about-info">
+                    <h3 class="about-content-title">БОЛЕЕ 10 ЛЕТ ОСТАВЛЯЮ В ПАМЯТИ ВАШИ ЭМОЦИИ</h2>
+                    <div class="about-content">
+                        <ul class="about-list">
+                            <li class="about-item">— молодой амбициозный специалист</li>
+                            <li class="about-item">— обширное портфолио</li>
+                            <li class="about-item">— проживаю в Архангельске </li>
+                            <li class="about-item">— победитель “Молодая Фотография”</li>
+                            <li class="about-item">— готов работать и в других городах</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="about-card">
+                <img src="img/me-2.png" alt="photo with me" class="about-contacts-img contacts-img">
+                <div class="about-info">
+                    <h3 class="about-content-title">НЕМНОГО О МОЕЙ ЖИЗНИ</h2>
+                    <div class="about-content">
+                        Привет, меня зовут Максим, и я фотограф из Архангельска. Фотография - это моя страсть, которая началась еще в детстве, когда мой отец подарил мне свою первую камеру. С тех пор я не могу представить свою жизнь без фотографии.
+                        Я снимаю все, что меня окружает - людей, природу, города. Моя любимая тема - уличная фотография. Я люблю запечатлевать на кадре эмоции и настроение городской жизни.
+                    </div>
+                </div>
+            </div>
+            <div class="about-card">
+                <img src="img/me-3.png" alt="photo with me" class="about-contacts-img contacts-img">
+                <div class="about-info">
+                    <h3 class="about-content-title">КРОМЕ ТОГО</h2>
+                    <div class="about-content">
+                        Я работаю над своими собственными проектами. Недавно я начал снимать серию портретов местных жителей, чтобы показать их жизнь и культуру. Я также увлекаюсь спортом и читаю книги о фотографии, чтобы постоянно улучшать свои навыки. Я счастлив, что моя работа - это мое хобби, и я надеюсь, что мои фотографии помогут людям увидеть мир по-другому и оценить красоту вокруг нас.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <hr class="line">
+            <div class="footer-links">
+                <a href="" class="footer-link">
+                    <img src="img/social images/odnoklassnik.png" alt="social img" class="footer-img">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="img/social images/vk.png" alt="social img" class="footer-img">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="img/social images/telegram.png" alt="social img" class="footer-img">
+                </a>
+                <a href="index.html" class="footer-link">
+                    <img src="img/logo.png" alt="logo" class="footer-logo">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="img/social images/instagram.png" alt="social img" class="footer-img">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="img/social images/whatsapp.png" alt="social img" class="footer-img">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="img/social images/tik-tok.png" alt="social img" class="footer-img">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>

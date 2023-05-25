@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" href="img/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Портфолио</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="header-logo-link">
+                <img src="img/logo.png" alt="logo png" class="header-logo">
+            </a>
+            <ul class="header-list">
+                <a href="index.html" class="header-list-link">
+                    <li class="header-list-item">ГЛАВНАЯ</li>
+                </a>
+                <a href="portfolio.html" class="header-list-link">
+                    <li class="header-list-item">ПОРТФОЛИО</li>
+                </a>
+                <a href="about-me.html" class="header-list-link">
+                    <li class="header-list-item">ОБО МНЕ</li>
+                </a>
+                <a href="contacts.html" class="header-list-link">
+                    <li class="header-list-item checked-item">КОНТАКТЫ</li>
+                </a>
+                <a href="#" class="header-list-link openModal">
+                    <li class="header-list-item">ЗАКАЗАТЬ</li>
+                </a>
+            </ul>
+            <hr class="line">
+        </div>
+    </header>
+    <main>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <img src="img/close.svg" alt="close icon" class="modal-close" id="closeModal">
+                <h4 class="modal-title">ЗАКАЗАТЬ ФОТОСЕССИЮ</h4>
+                <p class="modal-text">
+                    Для того чтобы заказать фотосессию заполните форму. Вы получите письмо с подтверждением заказа на почту.
+                </p>
+                <form action="" class="modal-form">
+                    <div class="input-title">Email:</div>
+                    <input type="email" placeholder="example@gmail.com" class="modal-item modal-input">
+                    <div class="input-title">Номер телефона:</div>
+                    <input type="tel" placeholder="+78005553535" class="modal-item modal-input">
+                    <div class="input-title">Выберите услугу:</div>
+                    <select class="modal-item modal-select">
+                        <option>Почасовая</option>
+                        <option>На весь день</option>
+                        <option>Межгородской</option>
+                      </select>
+                    <div class="input-title">Выберите дату:</div>
+                    <input type="date" class="modal-item modal-date">
+                    <input type="submit" class="modal-submit btn" value="ЗАКАЗАТЬ">
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="contacts-info">
+                <h2 class="contacts-title">КОНТАКТЫ</h2>
+                <p class="contacts-text">
+                    Вы можете связаться со мной любым удобным для вас способом - по телефону, электронной почте или через социальные сети. Я всегда рад новым знакомствам и готов обсудить любые вопросы, связанные с моей работой. Буду рад услышать от вас!
+                </p>
+            </div>
+        </div>
+        <div class="contacts-map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd594b55c7eb0756b6213bce92a7ba7f555ab9ded1f146ba204839a354c2dd50&amp;source=constructor" width="100%" height="720" frameborder="0"></iframe>
+            <div class="contacts-block">
+                <div class="contacts-cards">
+                    <div class="contacts-card">
+                        <img src="img/icons/1.svg" alt="contacts icon" class="contacts-icon">
+                        <div class="contacts-card-content">
+                            <div class="contacts-card-title semi-bold">Электронная почта</div>
+                            <div class="contacts-card-text">baranchuk@yandex.ru</div>
+                        </div>
+                    </div>
+                    <div class="contacts-card">
+                        <img src="img/icons/2.svg" alt="contacts icon" class="contacts-icon">
+                        <div class="contacts-card-content">
+                            <div class="contacts-card-title semi-bold">Телефон</div>
+                            <div class="contacts-card-text">8 (800) 555 35 35</div>
+                        </div>
+                    </div>
+                    <div class="contacts-card">
+                        <img src="img/icons/3.svg" alt="contacts icon" class="contacts-icon">
+                        <div class="contacts-card-content">
+                            <div class="contacts-card-title semi-bold">Архангельск</div>
+                            <div class="contacts-card-text">Набережная Северной<br> Двины, 10</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <hr class="line">
+            <div class="footer-links">
+                <a href="" class="footer-link">
+                    <img src="img/social images/odnoklassnik.png" alt="social img" class="footer-img">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="img/social images/vk.png" alt="social img" class="footer-img">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="img/social images/telegram.png" alt="social img" class="footer-img">
+                </a>
+                <a href="index.html" class="footer-link">
+                    <img src="img/logo.png" alt="logo" class="footer-logo">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="img/social images/instagram.png" alt="social img" class="footer-img">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="img/social images/whatsapp.png" alt="social img" class="footer-img">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="img/social images/tik-tok.png" alt="social img" class="footer-img">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>

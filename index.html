@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" href="img/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная страница</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="header-logo-link">
+                <img src="img/logo.png" alt="logo png" class="header-logo">
+            </a>
+            <ul class="header-list" id="header-list">
+                <a href="index.html" class="header-list-link">
+                    <li class="header-list-item checked-item">ГЛАВНАЯ</li>
+                </a>
+                <a href="portfolio.html" class="header-list-link">
+                    <li class="header-list-item">ПОРТФОЛИО</li>
+                </a>
+                <a href="about-me.html" class="header-list-link">
+                    <li class="header-list-item">ОБО МНЕ</li>
+                </a>
+                <a href="contacts.html" class="header-list-link">
+                    <li class="header-list-item">КОНТАКТЫ</li>
+                </a>
+                <a href="#" class="header-list-link openModal">
+                    <li class="header-list-item">ЗАКАЗАТЬ</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <img src="img/close.svg" alt="close icon" class="modal-close" id="closeModal">
+                <h4 class="modal-title">ЗАКАЗАТЬ ФОТОСЕССИЮ</h4>
+                <p class="modal-text">
+                    Для того чтобы заказать фотосессию заполните форму. Вы получите письмо с подтверждением заказа на почту.
+                </p>
+                <form action="" class="modal-form">
+                    <div class="input-title">Email:</div>
+                    <input type="email" placeholder="example@gmail.com" class="modal-item modal-input">
+                    <div class="input-title">Номер телефона:</div>
+                    <input type="tel" placeholder="+78005553535" class="modal-item modal-input">
+                    <div class="input-title">Выберите услугу:</div>
+                    <select class="modal-item modal-select">
+                        <option>Почасовая</option>
+                        <option>На весь день</option>
+                        <option>Межгородской</option>
+                      </select>
+                    <div class="input-title">Выберите дату:</div>
+                    <input type="date" class="modal-item modal-date">
+                    <input type="submit" class="modal-submit btn" value="ЗАКАЗАТЬ">
+                </form>
+            </div>
+        </div>
+        <section class="section-hero">
+            <div class="hero-title-block">
+                <h1 class="hero-title container">ЗАХВАТИ МОМЕНТЫ НАШЕЙ ЖИЗНИ ВМЕСТЕ С НАМИ!</h1>
+            </div>
+            <div class="hero-scroll-block">
+                <a href="#works" class="scroll-link"><img src="img/scroll.svg" alt="scroll svg" class="swiper-scroll"></a>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/hero-img-1.jpg" alt="hero img jpeg"></div>
+                    <div class="swiper-slide"><img src="img/hero-img-2.jpg" alt="hero img jpeg"></div>
+                    <div class="swiper-slide"><img src="img/hero-img-3.jpg" alt="hero img jpeg"></div>
+                    <div class="swiper-slide"><img src="img/hero-img-4.jpg" alt="hero img jpeg"></div>
+                    <div class="swiper-slide"><img src="img/hero-img-5.jpg" alt="hero img jpeg"></div>
+                </div>
+                <img src="img/next.svg" alt="next slide btn" class="swiper-button-next">
+                <img src="img/prev.svg" alt="prev slide btn" class="swiper-button-prev">
+            </div>
+        </section>
+        
+        <section class="section-works" id="works">
+            <div class="container">
+                <h2 class="works-title">
+                    ПОРТФОЛИО
+                </h2>
+                <p class="works-info">
+                    Мое портфолио - это коллекция неповторимых моментов, запечатленных в кадре. Я создаю качественные и эмоциональные фотографии, которые оставят яркие впечатления на любого зрителя.
+                </p>
+                <div class="works-images">
+                    <div class="works-images-column">
+                        <a href="img/works images/full/1.png" data-fancybox="gallery" data-caption="Пример 1">
+                            <img src="img/works images/1.png" alt="works image" class="main-works-img">
+                        </a>
+                        <a href="img/works images/full/1.png" data-fancybox="gallery" data-caption="Пример 1" class="gallery-btn btn">
+                            Посмотреть портфолио
+                        </a>
+                        <a href="img/works images/full/2.png" data-fancybox="gallery" data-caption="Пример 2">
+                            <img src="img/works images/2.png" alt="works image" class="works-img">
+                        </a>
+                        <a href="img/works images/full/3.png" data-fancybox="gallery" data-caption="Пример 3">
+                            <img src="img/works images/3.png" alt="works image" class="works-img">
+                        </a> 
+                    </div>
+                    <div class="works-images-column">
+                        <a href="img/works images/full/4.png" data-fancybox="gallery" data-caption="Пример 4">
+                            <img src="img/works images/4.png" alt="works image" class="works-img">
+                        </a>
+                        <a href="img/works images/full/5.png" data-fancybox="gallery" data-caption="Пример 5">
+                            <img src="img/works images/5.png" alt="works image" class="works-img">
+                        </a>
+                        <a href="img/works images/full/6.png" data-fancybox="gallery" data-caption="Пример 6">
+                            <img src="img/works images/6.png" alt="works image" class="works-img">
+                        </a> 
+                    </div>
+                    <div class="works-images-column">
+                        <a href="img/works images/full/7.png" data-fancybox="gallery" data-caption="Пример 7">
+                            <img src="img/works images/7.png" alt="works image" class="works-img">
+                        </a>
+                        <a href="img/works images/full/8.png" data-fancybox="gallery" data-caption="Пример 8">
+                            <img src="img/works images/8.png" alt="works image" class="works-img">
+                        </a>
+                        <a href="img/works images/full/9.png" data-fancybox="gallery" data-caption="Пример 9">
+                            <img src="img/works images/9.png" alt="works image" class="works-img">
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-about">
+            <div class="container">
+                <div class="about-contacts">
+                    <div class="about-contacts-block">
+                        <div class="about-contacts-card">
+                            <a href="baranchuk@yandex.ru" class="about-contacts-email">baranchuk@yandex.ru</a><br>
+                            <a href="tel:+78005553535" class="about-contacts-tel">8 (800) 555-35-35</a>
+                        </div>
+                    </div>
+                    <img src="img/me.png" alt="photo with me" class="about-contacts-img">
+                </div>
+                <div class="about-info">
+                    <h2>ОБО МНЕ:</h2>
+                    <nav class="about-nav">
+                        <ul class="about-list">
+                            <li class="about-item">— молодой амбициозный специалист</li>
+                            <li class="about-item">— обширное портфолио</li>
+                            <li class="about-item">— проживаю в Архангельске </li>
+                            <li class="about-item">— победитель “Молодая Фотография”</li>
+                            <li class="about-item">— готов работать и в других городах</li>
+                        </ul>
+                    </nav>
+                    <a href="about-me.html" class="about-btn btn">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-prices">
+            <div class="container">
+                <div class="prices-cards">
+                    <div class="prices-card">
+                        <img src="img/prices images/1.png" alt="prices img" class="prices-card-img">
+                        <h3 class="prices-card-title">
+                            ПОЧАСОВАЯ
+                        </h3>
+                        <div class="prices-card-text">
+                            3.000 ₽ в час (Архангельск)
+                        </div>
+                    </div>
+                    <div class="prices-card">
+                        <img src="img/prices images/2.png" alt="prices img" class="prices-card-img">
+                        <h3 class="prices-card-title">
+                            НА ВЕСЬ ДЕНЬ
+                        </h3>
+                        <div class="prices-card-text">
+                            30.000 ₽(Архангельск)
+                        </div>
+                    </div>
+                    <div class="prices-card">
+                        <img src="img/prices images/3.png" alt="prices img" class="prices-card-img">
+                        <h3 class="prices-card-title">
+                            МЕЖГОРОДСКОЙ
+                        </h3>
+                        <div class="prices-card-text">
+                            100.000 ₽ за выезд (Россия)
+                        </div>
+                    </div>
+                </div>
+                <div href="#" class="prices-btn btn openModal">ПЕРЕЙТИ К ЗАКАЗУ</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <hr class="footer-line">
+            <div class="footer-links">
+                <a href="" class="footer-link">
+                    <img src="img/social images/odnoklassnik.png" alt="social img" class="footer-img">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="img/social images/vk.png" alt="social img" class="footer-img">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="img/social images/telegram.png" alt="social img" class="footer-img">
+                </a>
+                <a href="index.html" class="footer-link">
+                    <img src="img/logo.png" alt="logo" class="footer-logo">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="img/social images/instagram.png" alt="social img" class="footer-img">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="img/social images/whatsapp.png" alt="social img" class="footer-img">
+                </a>
+                <a href="" class="footer-link">
+                    <img src="img/social images/tik-tok.png" alt="social img" class="footer-img">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
