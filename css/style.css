@@ -1,3 +1,8 @@
+/*Плавный скролл к якорям*/
+html {
+    scroll-behavior: smooth;
+}
+
 /* Указываем box sizing */
 *,
 *::before,
