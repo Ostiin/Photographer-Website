@@ -56,7 +56,7 @@ a:hover {
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 input, select {
@@ -129,12 +129,12 @@ h4 {
 .header-logo-link {
     display: flex;
     justify-content: center;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 
 .header-logo {
     transition: .3s;
-    width: 410px;
+    width: 310px;
 }
 
 .header-logo:hover {
@@ -153,10 +153,11 @@ h4 {
 .header-list {
     display: flex;
     justify-content: space-between;
+    font-size: 30px;
 }
 
 header .line {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 /*Footer*/
@@ -196,6 +197,10 @@ header .line {
     z-index: 11;
     background: #00000092;
     overflow-y: auto;
+}
+
+.modal-title {
+    text-align: center;
 }
 
 .modal-content {
@@ -283,7 +288,7 @@ header .line {
 .swiper {
     margin-top: 50px;
     width: 100%;
-    height: 950px;
+    height: 700px;
 }
 
 .swiper-slide img {
@@ -348,6 +353,14 @@ header .line {
 
 .works-img:not(:nth-child(3n)), .main-works-img {
     margin-bottom: 50px;
+}
+
+.works-img, .main-works-img {
+    transition: .3s;
+}
+
+.works-img:hover, .main-works-img:hover {
+    transform: scale(.98);
 }
 
 /*Секция обо мне (для главной страницы)*/
@@ -449,6 +462,14 @@ header .line {
     margin-bottom: 180px;
 }
 
+.portfolio-img {
+    transition: .3s;
+}
+
+.portfolio-img:hover {
+    transform: scale(.98);
+}
+
 /*Обо мне*/
 .about-title {
     margin-top: 180px;
@@ -537,6 +558,15 @@ header .line {
 
 .contacts-card-content {
     font-size: 20px;
+}
+
+.contacts-link {
+    transition: .3s;
+    color: #000000;
+}
+
+.contacts-link:hover {
+    color: #7D7D7D;
 }
 
 @media (max-width: 1320px) {
@@ -648,6 +678,10 @@ header .line {
 
     .about-info {
         margin-left: 0;
+    }
+
+    .about-card:nth-child(3) .about-info {
+        margin-right: 0;
     }
 
     .contacts-img {
