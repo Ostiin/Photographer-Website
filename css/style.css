@@ -312,7 +312,7 @@ header .line {
 .hero-scroll-block {
     position: absolute;
     width: 100%;
-    margin-top: 800px;
+    margin-top: 550px;
     z-index: 10;
 }
 
